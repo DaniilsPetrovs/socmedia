@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This will ensure the elements are spread out */
+    padding: 0 20px;
+    background-color: var(--header-color);
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100px;
+    margin-left: 50%; /* This centers the logo horizontally */
+    transform: translateX(-50%); /* Adjust for the width of the logo */
+}
+
+.auth-buttons {
+    margin-left: auto; /* Pushes the buttons to the right */
+}

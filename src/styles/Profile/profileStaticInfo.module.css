@@ -1,0 +1,199 @@
+.profileContent {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #e1e4e8;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s
+}
+
+.profileContent:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profilePicture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #e1e4e8;
+    transition: transform 0.3s;
+}
+
+.profilePicture:hover {
+    transform: rotate(360deg);
+}
+
+.profileHeaderInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileName {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+.status {
+    color: #666;
+    margin: 5px 0 0;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.body:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.04);
+}
+
+.userInfo {
+    background-color: #f5f8fa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section strong {
+    display: block;
+    color: #150AA1;
+    margin-bottom: 5px;
+}
+
+.section p {
+    margin: 0;
+    color: #555;
+}
+
+.contactList {
+    list-style: none;
+    padding: 0;
+}
+
+.contactItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e4e8;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+.contactItem:hover {
+    background-color: #f1f1f1;
+    padding: 12px 0;
+}
+
+.contactType {
+    font-weight: bold;
+}
+
+.contactsSection {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.contactsSection:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.04);
+}
+
+.contactsSection strong {
+    display: block;
+    margin-bottom: 30px;
+    color: #150AA1;
+}
+
+@media (max-width: 600px) {
+    .profileContent {
+        padding: 15px;
+    }
+
+    .profilePicture {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profileName {
+        font-size: 1.4rem;
+    }
+}
+
+.contactItem.facebook strong,
+.contactItem.vk strong,
+.contactItem.github strong {
+    color: #333;
+}
+
+/* Additional animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.profileContent {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.header {
+    animation: slideIn 0.6s ease-in-out;
+}
+
+.body, .contactsSection {
+    animation: slideIn 0.7s ease-in-out;
+}
+
+.contactItem {
+    animation: fadeIn 0.8s ease-in-out;
+}

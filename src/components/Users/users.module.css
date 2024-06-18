@@ -1,0 +1,20 @@
+/* users.module.css */
+.usersSection {
+    width: 100%;
+}
+
+.usersWrapper {
+    display: flex;
+    width: 100%;
+    gap: 20px; /* Optional: Add some space between the header and container */
+}
+
+/*.usersWrapper > div {*/
+/*    flex: 1; !* Ensures both children take equal width, adjust as needed *!*/
+/*}*/
+
+@media (max-width: 768px) {
+    .usersWrapper {
+        flex-direction: column; /* Stack the elements vertically on smaller screens */
+    }
+}

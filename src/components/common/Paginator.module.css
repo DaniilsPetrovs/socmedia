@@ -1,0 +1,36 @@
+.paginator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.navButton, .pageButton {
+    background-color: #686868;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navButton:hover, .pageButton:hover {
+    background-color: #505050;
+    transform: translateY(-2px);
+}
+
+.pageButton {
+    font-size: 16px;
+}
+
+.pageButton.active {
+    background-color: #150AA1;
+    font-weight: bold;
+}
+
+.navButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
